@@ -15,6 +15,12 @@ describe('Fix the Scope', function() {
     })
   })
 
+  describe('myAnimal()', function() {
+    it('returns my animal', () => {
+      expect(window.myAnimal()).toEqual('cat')
+    })
+  })
+
   describe('add2(n)', function() {
     it('adds two to n', function() {
       const n = Math.floor(Math.random() * 1000)
